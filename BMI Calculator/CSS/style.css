@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3fbfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    overflow: hidden; 
+}
+
+#header {
+    align-items: center;
+    width: 100%;
+    padding: 5px 0; 
+    text-align: center; 
+}
+
+#header img {
+    max-width: 50%; 
+    height: auto; 
+}
+
+#calculator {
+    background-color: #e0f4f8;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 65%;
+    max-width: 500px; 
+    margin-top: 10px; 
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+    display: none; 
+}
+
+#gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.gender-icon {
+    background-color: #f3fbfd; 
+    border: 2px solid #ccc; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 5px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vw; 
+    width: 25vw; 
+    max-height: 140px; 
+    max-width: 140px; 
+    min-height: 120px;
+    min-width: 120px;
+    opacity: 0.5; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.gender-icon.selected {
+    transform: scale(1.1); 
+    opacity: 1;
+}
+
+.gender-icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#age-container, #calculate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px; 
+    margin-top: 10px; 
+    width: 50%; 
+    max-width: 200px; 
+    text-align: center;
+}
+
+.age-input-container, .metric-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; 
+}
+
+.age-label, .metric-label {
+    font-size: 14px; 
+    color: #333;
+}
+
+.age-input, .metric-input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px; 
+    width: 100%;
+    margin-top: 5px;
+    padding: 0 10px; 
+}
+
+.age-input::-webkit-outer-spin-button,
+.age-input::-webkit-inner-spin-button,
+.metric-input::-webkit-outer-spin-button,
+.metric-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.age-button, .metric-button {
+    background-color: #e0f4f8;
+    border: none;
+    font-size: 18px; 
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.age-button:hover, .metric-button:hover {
+    background-color: #ccecf8;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-3px); 
+}
+
+#metrics-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px; 
+    flex-wrap: wrap;
+}
+
+.metric-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px; 
+    margin: 5px; 
+    width: 45%; 
+    max-width: 200px; 
+    text-align: center;
+}
+
+.calculate-button {
+    background-color: #e0f4f8; 
+    border: 2px solid #c4e8f0; 
+    color: black; 
+    font-size: 16px; 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 10px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.calculate-button:hover {
+    background-color: #ccecf8; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-5px); 
+}
+
+#result {
+    display: none; 
+    background-color: #e0f4f8; 
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-content {
+    max-width: 400px;
+    margin: auto;
+}
+
+.result-content h2 {
+    margin-bottom: 10px;
+}
+
+.result-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.result-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.result-content button {
+    background-color: #e0f4f8; 
+    border: 2px solid #c4e8f0; 
+    color: black; 
+    font-size: 16px; 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 10px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.result-content button:hover {
+    background-color: #ccecf8; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-5px); 
+}
+
+@media (max-width: 768px) {
+    #header img {
+        width: 100%;
+        height: auto;
+    }
+    #calculator {
+        width: 90%;
+        height: 80%;
+    }
+
+    .gender-icon {
+        height: 30vw; 
+        width: 30vw; 
+        max-height: 120px;
+        max-width: 120px;
+        min-height: 100px;
+        min-width: 100px;
+    }
+
+    #metrics-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .metric-container {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    #age-container, #calculate-container {
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header img {
+        width: 100%;
+        height: auto;
+    }
+    .gender-icon {
+        height: 35vw; 
+        width: 35vw; 
+        max-height: 100px;
+        max-width: 100px;
+        min-height: 80px;
+        min-width: 80px;
+    }
+
+    #age-container, .metric-container, #calculate-container {
+        width: 80%;
+    }
+}
