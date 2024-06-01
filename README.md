@@ -25,7 +25,7 @@ The BMI Calculator is a web application that allows users to calculate their Bod
 The Portfolio project showcases my work and skills. It includes sections for my biography, projects, and contact information.
 
 #### Features
--Navigation Bar
+- Navigation Bar
 - Hero Section
 - About Section
 - Education Section
@@ -34,6 +34,19 @@ The Portfolio project showcases my work and skills. It includes sections for my 
 - Projects Section
 - Contact Section
 - Footer
+
+#### Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+### Simple Calculator
+The Simple Calculator is a web application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator provides a user-friendly interface to input numbers and select operations.
+
+#### Features
+- Addition, subtraction, multiplication, and division
+- Clear button to reset the input
+- Responsive design
 
 #### Technologies Used
 - HTML
