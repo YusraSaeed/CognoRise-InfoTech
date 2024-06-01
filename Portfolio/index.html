@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="BMI Calculator">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Yusra Saeed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+        <!-- Navigation Bar -->
+        <nav id="nav">
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="icon-burger">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li class="mobile-only"><a href="resume.pdf" download="Yusra Saeed_CV.pdf" class="download-cv">Download CV</a></li>
+            </ul>
+            <div class="desktop-only">
+                <a href="resume.pdf" download="Yusra Saeed_CV.pdf" class="download-cv">Download CV</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </nav>
+        
+        
+
+        <!-- Introduction -->
+        <div class="content" id="home">
+            <h4>Hello, my name is</h4>
+            <h1>Yusra <span>Saeed</span></h1>
+            <h3>I am a Developer.</h3>
+            <div class="newsletter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Let's Start">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <section class="about" id="about">
+        <div class="main">
+            <img src="Images/pfp.jpg" alt="Profile Picture" class="animate-img">
+            <div class="about-text animate-text">
+                <h2>About Me</h2>
+                <h5>Developer & <span>Designer</span></h5>
+                <p>As an experienced web developer, I am passionate about crafting exceptional digital 
+                    experiences. With a keen eye for design and a mastery of cutting-edge technologies, 
+                    I transform concepts into user-friendly, visually captivating websites and applications. 
+                    With a proven track record of delivering results, I thrive in collaborative environments, 
+                    always seeking innovative solutions to complex challenges. Let's collaborate to turn your 
+                    vision into a dynamic and engaging online reality.</p>
+                <button type="button">Let's Talk</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Education -->
+    <section class="education">
+        <h2 class="animate-text">Educational Background</h2>
+        <ul>
+            <li class="animate-text">Matriculation, 2018 F.G. Public High School, Nowshera Cantt (Marks: 1051/1100)</li>
+            <li class="animate-text">Intermediate, 2020, Punjab Group of Colleges, Risalpur (Marks: 1007/1100)</li>
+            <li class="animate-text">Bachelors, Present, University of Engineering & Technology, Peshawar (Junior with a CGPA of 3.92)</li>
+        </ul>
+    </section>
+
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <h2 class="skills-heading">Skills</h2>
+        <div class="skills-container">
+            <div class="skills-description">
+                <p>As a web developer, I have honed my skills in a variety of technologies, including the MERN stack, PHP, MySQL, and more. These skills enable me to create dynamic and responsive websites that provide exceptional user experiences. My expertise spans front-end development with HTML, CSS, and JavaScript, as well as back-end technologies like Node.js and MongoDB. I am also proficient in PHP and MySQL, which allow me to build robust server-side applications.</p>
+            </div>
+            <div class="skills-bars">
+                <div class="skill">
+                    <p>HTML/CSS/SASS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Bootstrap</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>PHP</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>MySQL</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>MongoDB</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>React</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Node.js</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <h2 class="section-heading">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <i class="fas fa-project-diagram"></i>
+                <div class="count" data-target="10">0</div>
+                <p>Projects Completed</p>
+            </div>
+            <div class="experience-item">
+                <i class="fas fa-briefcase"></i>
+                <div class="count" data-target="2">0</div>
+                <p>Years of Experience</p>
+            </div>
+            <div class="experience-item">
+                <i class="fas fa-users"></i>
+                <div class="count" data-target="100">0</div>
+                <p>Happy Clients</p>
+            </div>
+            <div class="experience-item">
+                <i class="fas fa-certificate"></i>
+                <div class="count" data-target="5">0</div>
+                <p>Certifications</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Services -->
+    <div class="service" id ="services">
+        <div class="title">
+            <h2>Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Web Development</h5>
+                <div class="para">
+                    <p>As a web developer, I offer a range of services designed to bring your digital vision to life. From creating responsive and visually appealing websites to optimizing their performance, I specialize in HTML, CSS, JavaScript, and various web development frameworks to ensure a seamless user experience. Whether you need a new website, updates to an existing one, or expert advice on improving web functionality, I'm here to help you achieve your online goals with precision and creativity.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-paint-brush"></i>
+                <h5>User-Friendly Interfaces</h5>
+                <div class="para">
+                    <p>I focus on creating user-friendly interfaces that enhance the user experience. With an emphasis on intuitive design and seamless navigation, I ensure your website or application is accessible and engaging for all users. My expertise in UI/UX design principles helps to create interfaces that are not only visually appealing but also highly functional.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-cogs"></i>
+                <h5>Custom Web Solutions</h5>
+                <div class="para">
+                    <p>I provide custom web solutions tailored to meet your specific needs. Whether you require a unique feature or a custom-built application, I use the latest technologies and frameworks to develop solutions that are robust, scalable, and secure. From initial concept to final deployment, I work closely with you to deliver web solutions that exceed your expectations.</p>
+                    <!-- <p style="text-align: center;"><a class="button" href="#">Read More</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Delivered Projects</h2>
+        <p>Listed below are some of the most representative projects I've worked on. They range from basic web design for presentation sites to advanced web development for online shops.</p>
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <img src="Images/project1.jpg" alt="E-commerce Site" class="project-img">
+                <div class="project-content">
+                    <h3>E-commerce Book Store</h3>
+                    <p><b>Features:</b></p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Book Details Fetching</li>
+                        <li>Dynamic Book Categories</li>
+                        <li>Seamless User Experience</li>
+                    </ul>
+                    <a href="https://github.com/YusraSaeed/21PWBCS0828-WP-Fall23-A2" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="Images/project2.jpg" alt="Cafe De Peshawar" class="project-img">
+                <div class="project-content">
+                    <h3>Cafe De Peshawar</h3>
+                    <p><b>Features:</b></p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Static Site Showcasing the Business</li>
+                        <!-- <li>Dynamic Book Categories</li> -->
+                        <li>Seamless User Experience</li>
+                    </ul>
+                    <a href="https://github.com/YusraSaeed/21PWBCS0828-WP-Fall23-Task-05/" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <img src="Images/project3.jpg" alt="eShop" class="project-img">
+                <div class="project-content">
+                    <h3>eShop</h3>
+                    <p><b>Features:</b></p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <!-- <li>Book Details Fetching</li> -->
+                        <li>Dynamic Clothing Categories</li>
+                        <li>Seamless User Experience</li>
+                    </ul>
+                    <a href="https://github.com/YusraSaeed/21PWBCS0828-WP-Fall23-A2" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project Card  4-->
+            <div class="project-card">
+                <img src="Images/project4.jpg" alt="BMI" class="project-img">
+                <div class="project-content">
+                    <h3>BMI Calculator</h3>
+                    <p><b>Features:</b></p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Real-time BMI Calculation</li>
+                        <!-- <li>Dynamic Book Categories</li> -->
+                        <li>Seamless User Experience</li>
+                    </ul>
+                    <a href="https://github.com/YusraSaeed/21PWBCS0828-WP-Fall23-A2" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Project Card  5-->
+            <div class="project-card">
+                <img src="Images/project5.jpg" alt="OLMS" class="project-img">
+                <div class="project-content">
+                    <h3>Online Library Management System</h3>
+                    <p><b>Features:</b></p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Inventory Updation</li>
+                        <li>Dynamic Book Searching</li>
+                        <li>Seamless User Experience</li>
+                    </ul>
+                    <a href="https://github.com/YusraSaeed/21PWBCS0840-WP-Fall23-Task-06" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Contact Section -->
+    <div class="contact-me" id="contact">
+        <p>Let Me Get You A Beautiful Website</p>
+        <div class="card-2" id="form-card">
+            <form class="form" action="/submit" method="post" id="contactForm">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <div class="button-container">
+                    <button type="submit" class="button-two">Hire Me</button>
+                </div>
+            </form><br>
+        </div>
+        <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+            <p>Thanks for getting in touch. I will reach out to you soon.</p>
+            <div class="button-container">
+                <button class="button-two" id="backButton">Back to Form</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Yusra Saeed</p>
+        <p>For more HTML, CSS, and coding tutorials - please click on the links below to access my social media</p>
+        <div class="socials">
+            <a href="mailto:yusrasaeed333@gmail.com" target="_blank"><img src="Images/email.jpg" alt="Email" width="50" height="50"></a>
+            <a href="https://github.com/YusraSaeed/" target="_blank"><img src="Images/github.png" alt="GitHub" width="50" height="50"></a>
+            <a href="https://www.linkedin.com/in/yusra-saeed-370791294/" target="_blank"><img src="Images/linkedin.png" alt="LinkedIn" width="10" height="10"></a>
+        </div>
+        <p class="end">&copy; CopyRight By Yusra Saeed</p>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
