@@ -1,7 +1,7 @@
 # CognoRise-InfoTech
 
 ## Overview
-This repository contains projects developed during my internship at CognoRise InfoTech. It includes a three projects:  
+This repository contains projects developed during my internship at CognoRise InfoTech. It includes three projects:  
 - Portfolio
 - BMI Calculator
 - Calculator
